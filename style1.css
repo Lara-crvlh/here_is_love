@@ -1,0 +1,291 @@
+body.sommaire {
+    background-image: url("lover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body.index {
+	background-image: url("break.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+body.poeme2 {
+	background-image: url("neon.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+body.poeme3 {
+	background-image: url("luna.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+ 
+body.poeme4 {
+	background-image: url("folklore.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+body.poeme5 {
+	background-image: url("feu.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 70px;
+    color: #e600e6;
+    font-family: "SilverbladeRegular";
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+h2 { 
+    text-align: center;
+    font-family: "Papyrus";
+    margin-top: 10px;
+    color: #cc00cc;
+    margin-bottom: 50px;
+}
+
+p {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    font-family: "Garamond";
+    color: #2d062d;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+ul {
+    margin-left: 100px;
+    list-style-type: thai;
+    font-family: "GreatVibesRegular";
+    font-size: 40px;
+	color: #ff3399;
+}
+
+
+li.Love a {
+    color:#ff00ff;
+}
+
+
+li.Amour a {
+    color: #ff80ff
+	
+}
+
+li.Amor a {
+    color: #ff66a1;
+	
+}
+
+li.Amore a {
+    color: #ff0062;
+}
+
+li.Aishiteru a {
+    color: #cc004e;
+}
+
+li.Ichliebedich a  { 
+    color: #660027;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+
+li.Love a:hover {
+    color: #cc0066;
+    text-shadow: 0 0 5px #ff66aa, 0 0 10px #ff99cc;
+}
+
+li.Amour a:hover {
+    color: #b3005c;
+    text-shadow: 0 0 5px #ff66c7, 0 0 10px #ff99dd;
+}
+
+li.Amor a:hover {
+	color: #99004d;
+    text-shadow: 0 0 5px #ff66d9, 0 0 10px #ffb0e6;
+	
+}
+
+li.Amore a:hover {
+    color: #80003f;
+    text-shadow: 0 0 5px #ff66dd, 0 0 10px #ffb3e8;
+}
+
+li.Aishiteru a:hover {
+    color: #660033;
+    text-shadow: 0 0 5px #ff66e6, 0 0 10px #ffc2f2;
+
+}
+
+li.Ichliebedich a:hover {
+   color: #4d0026;
+    text-shadow: 0 0 5px #ff66f0, 0 0 10px #ffd6f7;
+}
+
+
+.tourne:hover {
+    transform: rotate(180deg);
+    letter-spacing: 10px;
+}
+
+
+.brillant {
+    font-size: 30px;
+    color: #e60000;
+    -webkit-text-stroke: 0.5px #ff4dff; /* contour léger */
+    text-shadow:
+        0 0 3px #ff4dff,
+        0 0 6px #ff4dff,
+        0 0 12px #ff4dff;
+}
+
+
+
+
+.pink {
+	color: #ff99e6;
+	font-family: 'GothicaBookOblique';
+	font-weight: normal;
+	font-style: italic;
+	text-align: justify;
+
+}
+
+.pinky {
+	color: #ff99e6;
+	font-family: 'HappyTimeTwo';
+    font-style: italic;
+    font-size: 25px;
+}
+
+.violet {
+	color: #ff66ff;
+	font-family: 'KaushanScriptRegular';
+    font-size: 20px;
+    font-style: normal;
+
+}
+
+.ligth {
+	color: #ffb3ff; 
+
+}
+
+.last {
+	color: #cc6600; 
+	font-family: 'BrushLetteringOneBoldItalic';
+    font-weight: bold;
+    font-style: italic;
+	text-align: justify;
+
+}
+
+
+.text-gauche {
+    width: 580px;
+    padding: 30px;
+    background: #00004d;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    border-radius: 20px;
+    text-align: justify;
+    font-size: 18px;
+    overflow: hidden;
+	
+	 box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.4),
+        0 0 40px rgba(153, 102, 255, 0.5),
+        0 0 80px rgba(255, 153, 255, 0.4),
+        inset 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.text-gauche::before,
+.text-gauche::after {
+    content: "✨";
+    position: absolute;
+    font-size: 25px;
+    animation: sparkle 3s infinite ease-in-out;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+@keyframes sparkle {
+    0%   { transform: scale(0.7) translateY(0); opacity: 0.6; }
+    50%  { transform: scale(1.2) translateY(-10px); opacity: 1; }
+    100% { transform: scale(0.7) translateY(0); opacity: 0.6; }
+}
+
+.text-gauche2 {
+	width: 520px; 
+	min-height: 100px;
+	background-color: #ffbf80; 
+	padding: 25px 30px; 
+	border-radius: 12px;
+	box-shadow: 0 6px 12px rgba(45, 34, 34, 0.3); 
+	text-align: justify;
+	font-size: 17px; 
+	font-weight: bold; 
+	
+}
+
+.text-gauche2::before, 
+.text-gauche2::after {
+	 content: "🔥";
+    position: absolute;
+    font-size: 25px;
+    animation: sparkle 3s infinite ease-in-out;
+    opacity: 0.8;
+    pointer-events: none;
+
+}
+
+
+.barre {
+    text-decoration: line-through;
+}
+
+p.cadre {
+	border-style: dashed; 
+	border-color: #99004d;
+	padding: 20px; 
+	margin: 50px;
+	width: 25%; 
+
+}
+

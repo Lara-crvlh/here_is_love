@@ -1,0 +1,84 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="auteur" content="Lara.S"> 
+	<title>Here is Love !</title>
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/silverblade" type="text/css"/>
+</head>
+   
+<body class="poeme4">
+	<h1>Where is Love ?</h1>
+	<h2>Lara.S</h2>
+	
+	<p>
+		<span class=brillant><a href="sommaire.html">Le cardigan oublié sous la pluie !</a></span>
+	</p>
+	
+	<p id="textePoeme" class="ligth cadre">
+	Killing me slow, out the window
+	<br>
+	I'm always waiting for you to be waiting below
+	<br>
+	It's been a while since I have even heard from you
+	<br>
+	I can see the end as it begins
+	<br>
+	You're so cool, it makes me hate you so much
+	<br>
+	They said, "Babe, you gotta fake it till you make it" and I did
+	<br>
+	Lights, camera, bitch smile, even when you wanna die
+	<br>
+	Forcing laughter, faking smiles
+	<br>
+	The lingering question kept me up
+	<br>
+	2 AM, who do you love ?
+	<br>
+	Wishing you were at my door
+	<br>
+	You made a really deep cut
+	<br>
+	Did you have to do this ?
+	<br>
+	I was thinking that you could be trusted
+	<br>
+	Did you have to ruin what was shiny ?
+	</p>
+	
+	 <button id="toggleBtn">Cliquez ici</button>
+
+    <script>
+    const textePoeme = document.getElementById("textePoeme");
+    const toggleBtn = document.getElementById("toggleBtn");
+
+    const anglais = textePoeme.innerHTML;
+
+    const francais = `Tu me tues lentement, par la fenêtre<br>
+       J’attends toujours que tu m’attendes en bas<br>
+       Cela fait un moment que je n’ai même pas eu de tes nouvelles<br>
+       Je vois la fin au moment où tout commence<br>
+       Tu es tellement cool que ça me fait te détester autant<br>
+       Ils disaient : « Bébé, faut faire semblant jusqu’à ce que ça marche », et je l’ai fait<br>
+       Lumières, caméra, sourire forcé, même quand tu veux mourir<br>
+       Forcer les rires, feindre les sourires<br>
+       La question qui restait en suspens m’a tenue éveillée<br>
+       À 2 heures du matin, qui est-ce que tu aimes ?<br>
+       Espérant que tu sois à ma porte<br>
+       Tu m’as profondément blessée<br>
+       Fallait-il vraiment faire ça ?<br>
+       Je pensais que je pouvais te faire confiance<br>
+		Fallait-il ruiner ce qui brillait ?`;
+
+    let estFrancais = false;
+
+    toggleBtn.addEventListener("click", () => {
+        if (!estFrancais) {
+            textePoeme.innerHTML = francais;
+        } else {
+            textePoeme.innerHTML = anglais;
+        }
+        estFrancais = !estFrancais;
+    });
+    </script>
+</body>

@@ -1,0 +1,74 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="auteur" content="Lara.S"> 
+	<title>Here is Love !</title>
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/silverblade" type="text/css"/>
+</head>
+   
+<body class="poeme3">
+	<h1>Where is Love ?</h1>
+	<h2>Lara.S</h2>
+	
+	<p>
+		<span class=brillant><a href="sommaire.html">Les Miracles Portent Ton Parfum !</a></span>
+	</p>
+	
+	<div class="text-gauche">
+	
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/kaushan-script" type="text/css"/>
+<p id="textePoeme" class="violet">
+	
+I could show you incredible things, Magic, madness, heaven, sin.
+<br>
+"Romeo, take me somewhere we can be alone I'll be waiting, all there's left to do is run You'll be the prince,
+and I'll be the princess It's a love story, baby, just say yes"
+<br>
+I should just tell you to leave 'cause I know exactly where it leads
+Of your magnetic field being a little too strong
+<br>
+The lights refract sequined stars off her silhouette every night
+This night is sparkling, don't you let it go
+<br>
+I'm wonderstruck, blushing all the way home I'll spend forever wondering if you knew
+<br>
+I was enchanted to meet you 
+</p>						 
+						     	      
+    <button id="toggleBtn">Cliquez ici</button>
+
+    <script>
+    const textePoeme = document.getElementById("textePoeme");
+    const toggleBtn = document.getElementById("toggleBtn");
+
+    const anglais = textePoeme.innerHTML;
+
+    const francais = `Je pourrais te montrer des choses incroyables. 
+		Magie, folie, paradis, péché.<br>
+        « Roméo, emmène-moi quelque part où nous pourrons être seuls 
+        J’attendrai, il ne reste plus qu’à s’enfui
+        Tu seras le prince, et je serai la princesse
+        C’est une histoire d’amour, bébé, dis seulement oui »<br>
+        Je devrais juste te dire de partir parce que
+        Je sais exactement où tout cela mène<br>
+        Ton champ magnétique est un peu trop puissant
+        Les lumières reflètent des étoiles scintillantes
+        sur sa silhouette chaque nuit<br>
+        Cette nuit est étincelante, ne la laisse pas s’échapper<br>
+        Je suis éblouie, rougissante jusqu’à la maison
+        Je passerai l’éternité à me demander si tu savais<br>
+		Que j’étais enchantée de te rencontrer.`;
+
+    let estFrancais = false;
+
+    toggleBtn.addEventListener("click", () => {
+        if (!estFrancais) {
+            textePoeme.innerHTML = francais;
+        } else {
+            textePoeme.innerHTML = anglais;
+        }
+        estFrancais = !estFrancais;
+    });
+    </script>
+</div>
+</body>
