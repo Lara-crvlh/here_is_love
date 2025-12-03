@@ -28,7 +28,18 @@ body.poeme3 {
 
 }
 
- 
+body.poeme3 h1 {
+	color: #ffffff
+	
+}
+
+body.poeme3 h2 {
+	color: #ffffff
+	
+}
+
+
+
 body.poeme4 {
 	background-image: url("folklore.jpg");
 	background-size: cover;
@@ -45,6 +56,15 @@ body.poeme5 {
 
 }
 
+body.poeme5 h1 {
+	color: #4d2600;
+
+}
+
+body.poeme5 h2 {
+	color: #4d2600
+	
+}
 
 h1 {
     text-align: center;
@@ -167,13 +187,12 @@ li.Ichliebedich a:hover {
 .brillant {
     font-size: 30px;
     color: #e60000;
-    -webkit-text-stroke: 0.5px #ff4dff; /* contour léger */
+    -webkit-text-stroke: 0.5px #ff4dff; 
     text-shadow:
         0 0 3px #ff4dff,
         0 0 6px #ff4dff,
         0 0 12px #ff4dff;
 }
-
 
 
 
@@ -194,7 +213,7 @@ li.Ichliebedich a:hover {
 }
 
 .violet {
-	color: #ff66ff;
+	color: #ffffff;
 	font-family: 'KaushanScriptRegular';
     font-size: 20px;
     font-style: normal;
@@ -261,6 +280,7 @@ li.Ichliebedich a:hover {
 	text-align: justify;
 	font-size: 17px; 
 	font-weight: bold; 
+	margin: 0 auto;
 	
 }
 

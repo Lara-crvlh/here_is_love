@@ -1,0 +1,86 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="auteur" content="Lara.S"> 
+	<title>Here is Love !</title>
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/silverblade" type="text/css"/>
+</head>
+   
+<body class="index">
+    <h1>Where is Love ?</h1>
+    <h2>Lara.S</h2>
+
+    <p>
+        <span class="brillant"><a href="index.html">Écris mon nom si tu oses !</a></span> 
+    </p>
+    
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/gotica" type="text/css"/>
+    <p id="textePoeme" class="pink">
+        Oh, my God, look at that face
+        <br>
+        You look like my next mistake
+        <br>
+        Love's a game, wanna play? 
+        <br>
+        But I've got a blank space, baby
+        <br>
+        <s>And I'll write your name</s>
+        <br>
+        Screaming, crying, perfect storms
+        <br>
+        I can make all the tables turn
+        <br>
+        Rose garden filled with thorns
+        <br>
+        Keep you second guessing like
+        <br>
+        "Oh, my God, who is she?"
+        <br>
+        <s>I get drunk on jealousy</s>
+        <br>
+        Boys only want love if it's torture
+        <br>
+        Don't say I didn't, say I didn't warn ya
+        <br>
+        I promise that you'll never find another like me
+        <br>
+    </p>
+
+    <button id="toggleBtn">Cliquez ici</button>
+
+    <script>
+    const textePoeme = document.getElementById("textePoeme");
+    const toggleBtn = document.getElementById("toggleBtn");
+
+    const anglais = textePoeme.innerHTML;
+
+    const francais = `Oh mon Dieu, regarde ce visage<br>
+        On dirait ma prochaine erreur<br>
+        L'amour est un jeu, tu veux jouer ?<br>
+        Mais j'ai un espace vide, bébé<br>
+        <s>Et j'écrirai ton nom</s><br>
+        Criant, pleurant, tempêtes parfaites<br>
+        Je peux faire tourner toutes les tables<br>
+        Un jardin de roses rempli d'épines<br>
+        Te faire douter à chaque instant comme<br>
+        « Oh mon Dieu, qui est-elle ? »<br>
+        <s>Je me saoule de jalousie</s><br>
+        Les garçons ne veulent l'amour que si c'est de la torture<br>
+        Ne dis pas que je ne t'ai pas prévenu<br>
+        Je te promets que tu ne trouveras jamais quelqu'un comme moi`;
+
+    let estFrancais = false;
+
+    toggleBtn.addEventListener("click", () => {
+        if (!estFrancais) {
+            textePoeme.innerHTML = francais;
+        } else {
+            textePoeme.innerHTML = anglais;
+        }
+        estFrancais = !estFrancais;
+    });
+    </script>
+</body>
+
+
